@@ -34,7 +34,7 @@ export default {
   <main class="conteudo-principal">
     <SuaLista :ingredientes="ingredientes" />
 
-    <KeepAlive>
+    <KeepAlive include="SelecionarIngredientes">
       <SelecionarIngredientes
         v-if="conteudo === 'SelecionarIngredientes'"
         @adicionar-ingrediente="(e) => adicionarIngredientes(e)"
